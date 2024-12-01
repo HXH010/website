@@ -8,30 +8,39 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <header>
-        <!-- Navbar with the title on the left and navigation on the right -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="#">H&H FOOD TIPS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ms-auto" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
+<!-- Header Section -->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 1rem 0;">
+        <div class="container-fluid">
+            <!-- Brand Logo/Title -->
+            <a class="navbar-brand" href="#" style="font-size: 2rem; padding: 0.5rem;">H&H FOOD TIPS</a>
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#breakfast" style="font-size: 1.2rem; padding: 0.5rem;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#breakfast" style="font-size: 1.2rem; padding: 0.5rem;">Breakfast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lunch" style="font-size: 1.2rem; padding: 0.5rem;">Lunch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dinner" style="font-size: 1.2rem; padding: 0.5rem;">Dinner</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
+
 
     <!-- Breakfast Section -->
     <section id="breakfast">
@@ -85,11 +94,12 @@
         </div>
     </section>
     
-   <!-- Lunch Section -->
+<!-- Lunch Section -->
 <section id="lunch">
     <h2>LUNCH</h2>
     <div class="row text-center">
-        <div class="col-md-4">
+        <!-- Each col-md-4 ensures the items are spaced evenly within a row -->
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./Buffalo Chicken.jpg" alt="Buffalo Chicken" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Buffalo Chicken</figcaption>
@@ -98,7 +108,7 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="Veggie & Hummus Sandwich.jpg" alt="Veggie & Hummus Sandwich" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Veggie & Hummus Sandwich</figcaption>
@@ -107,19 +117,16 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
-                <img src="Lettuce Wraps.webp" alt="Feta Egg and Spinach" class="img-fluid" style="max-width: 250px; height: 250px;">
-                <figcaption> Lettuce Wraps</figcaption>
+                <img src="Lettuce Wraps.webp" alt="Lettuce Wraps" class="img-fluid" style="max-width: 250px; height: 250px;">
+                <figcaption>Lettuce Wraps</figcaption>
                 <a href="/lunch/lettuce.html">
                     <button style="background-color: orange; color: white; border: none; padding: 10px 20px; cursor: pointer;">See More</button>
                 </a>
             </figure>
         </div>
-    </div>
-    <!-- Additional rows for Lunch -->
-    <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="cobb salad.jpg" alt="Chicken Salad" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Chicken Salad</figcaption>
@@ -128,20 +135,11 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="Chicken Quesadillas.jpg" alt="Chicken Quesadillas" class="img-fluid" style="max-width: 250px; height: 250px;">
-                <figcaption>Grilled Cheese</figcaption>
+                <figcaption>Chicken Quesadillas</figcaption>
                 <a href="/lunch/chicken.html">
-                    <button style="background-color: orange; color: white; border: none; padding: 10px 20px; cursor: pointer;">See More</button>
-                </a>
-            </figure>
-        </div>
-        <div class="col-md-4">
-            <figure>
-                <img src="./Caesar Salad.jpg" alt="Caesar Salad" class="img-fluid" style="max-width: 250px; height: 250px;">
-                <figcaption>Caesar Salad</figcaption>
-                <a href="/lunch/caesar-salad.html">
                     <button style="background-color: orange; color: white; border: none; padding: 10px 20px; cursor: pointer;">See More</button>
                 </a>
             </figure>
@@ -151,18 +149,19 @@
 
 <!-- Dinner Section -->
 <section id="dinner">
-    <h2>Dinner</h2>
+    <h2>DINNER</h2>
     <div class="row text-center">
-        <div class="col-md-4">
+        <!-- Each col-md-4 ensures the items are spaced evenly within a row -->
+        <div class="col-md-4 mb-4">
             <figure>
-                <img src="./seasami instant ramen.webp" alt="Seasami Instant Ramen" class="img-fluid" style="max-width: 250px; height: 250px;">
-                <figcaption>Seasami Instant Ramen</figcaption>
-                <a href="/dinner/ramen.html">
+                <img src="image.png" alt="Adobo Chicken" class="img-fluid" style="max-width: 250px; height: 250px;">
+                <figcaption>Chicken Adobo</figcaption>
+                <a href="/dinner/adobo.html">
                     <button style="background-color: orange; color: white; border: none; padding: 10px 20px; cursor: pointer;">See More</button>
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./EW-Copycat-Dunkin-Avocado-Toast-hero-0674-7e2e7357ed9d4eedbf97bc93df51b2e8.webp" alt="Dunkin Avocado Toast" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Dunkin Avocado Toast</figcaption>
@@ -171,7 +170,7 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./EWL-feta-egg-and-spinach-breakfast-taco-step-05-2399-facf1af19e874405bffc5b55b80dc035.webp" alt="Feta Egg and Spinach" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Feta Egg and Spinach</figcaption>
@@ -181,9 +180,9 @@
             </figure>
         </div>
     </div>
-    <!-- Additional rows for Dinner -->
+    <!-- Additional row for Dinner -->
     <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./Spaghetti Bolognese.jpg" alt="Spaghetti Bolognese" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Spaghetti Bolognese</figcaption>
@@ -192,7 +191,7 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./Grilled Salmon.jpg" alt="Grilled Salmon" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Grilled Salmon</figcaption>
@@ -201,7 +200,7 @@
                 </a>
             </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <figure>
                 <img src="./Steak with Vegetables.jpg" alt="Steak with Vegetables" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Steak with Vegetables</figcaption>
@@ -213,6 +212,17 @@
     </div>
 </section>
 
+<!-- Footer Section -->
+<footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center; position: relative;">
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+    <p>Contact us at <a href="mailto:contact@yourwebsite.com" style="color: #ff6600; text-decoration: none;">contact@yourwebsite.com</a></p>
+    <div>
+        <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">LinkedIn</a>
+    </div>
+</footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
