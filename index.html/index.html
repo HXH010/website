@@ -8,37 +8,82 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-<!-- Header Section -->
-<header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 1rem 0;">
-        <div class="container-fluid">
-            <!-- Brand Logo/Title -->
-            <a class="navbar-brand" href="#" style="font-size: 2rem; padding: 0.5rem;">H&H FOOD TIPS</a>
-            <!-- Toggle button for mobile view -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #333;">
+            <!-- Logo on the left side -->
+            <a class="navbar-brand" href="/">
+                <img src="logo.png" alt="Logo" style="max-width: 150px;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navbar items aligned to the right -->
                 <ul class="navbar-nav ms-auto">
+                    <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#breakfast" style="font-size: 1.2rem; padding: 0.5rem;">Home</a>
+                        <a class="nav-link text-light" href="/index.html/index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#breakfast" style="font-size: 1.2rem; padding: 0.5rem;">Breakfast</a>
+        
+                    <!-- Dropdown for Breakfast -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownBreakfast" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Breakfast
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownBreakfast">
+                            <li><a class="dropdown-item" href="/breakfast/avado.html">Avocado Breakfast Salad</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/feta.html">Feta Egg and Spinach</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/index.html">Sesame Instant Ramen</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/bb.html">Blackbeans</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/peanut.html">Peanut Butter & Chia Berry Jam Muffin</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#lunch" style="font-size: 1.2rem; padding: 0.5rem;">Lunch</a>
+        
+                    <!-- Dropdown for Lunch -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownLunch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lunch
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLunch">
+                            <li><a class="dropdown-item" href="/lunch/buffalo.html">Buffalo Chicken</a></li>
+                            <li><a class="dropdown-item" href="/lunch/vegg.html">Veggie & Hummus Sandwich</a></li>
+                            <li><a class="dropdown-item" href="/lunch/lettuce.html">Lettuce Wraps</a></li>
+                            <li><a class="dropdown-item" href="/lunch/cobb salad.html">Chicken Salad</a></li>
+                            <li><a class="dropdown-item" href="/lunch/chicken.html">Chicken Quesadillas</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dinner" style="font-size: 1.2rem; padding: 0.5rem;">Dinner</a>
+        
+                    <!-- Dropdown for Dinner -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownDinner" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dinner
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDinner">
+                            <li><a class="dropdown-item" href="/dinner/adobo.html">Chicken Adobo</a></li>
+                            <li><a class="dropdown-item" href="/dinner/chicken.html">Chicken Binagoongan</a></li>
+                            <li><a class="dropdown-item" href="/dinner/gising.html">Chicken Gising Gising</a></li>
+                            <li><a class="dropdown-item" href="/dinner/spaghetti-bolognese.html">Escabeche</a></li>
+                            <li><a class="dropdown-item" href="/dinner/malapot.html">Pineapple-Chicken</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Dropdown for Desserts -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownDessert" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dessert
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDessert">
+                            <li><a class="dropdown-item" href="/desserts/cake.html">Cake</a></li>
+                            <li><a class="dropdown-item" href="/desserts/pie.html">Pie</a></li>
+                            <li><a class="dropdown-item" href="/desserts/cookies.html">Cookies</a></li>
+                            <li><a class="dropdown-item" href="/desserts/ice-cream.html">Ice Cream</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+          
+</header>    
 
 
 
@@ -182,7 +227,7 @@
             <figure>
                 <img src="./escabeche.webp" alt="Escabeche" class="img-fluid" style="max-width: 250px; height: 250px;">
                 <figcaption>Escabeche</figcaption>
-                <a href="/dinner/spaghetti-bolognese.html">
+                <a href="/dinner/escabech.html">
                     <button style="background-color: orange; color: white; border: none; padding: 10px 20px; cursor: pointer;">See More</button>
                 </a>
             </figure>
