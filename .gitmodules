@@ -1,6 +1,6 @@
 [submodule "website"]
 	path = website
 	url = https://github.com/HXH010/website.git
-[submodule "HXH"]
-	path = HXH
-	url = https://github.com/HXH010/website.git
+[submodule "HXH/HXH"]
+    path = HXH
+    url = https://github.com/HXH010/website.git
